@@ -1,13 +1,11 @@
 ## Progetto
 
-Realizza un chatbot AI-based integrando front end, back end e modelli AI.
+Il Progetto consiste nel realizzare un chatbot AI-based integrando front end, back end e modelli AI, che aiuti gli utenti a orientarsi tra i corsi di incluDO in base alle loro preferenze di studio.
 
-Il tuo obiettivo è sviluppare chatbot intelligente che aiuti gli utenti a orientarsi tra i corsi di incluDO in base alle loro preferenze di studio.
+Si richiede di sviluppare:
 
-Dovrai sviluppare:
-
-- Il front end con React, in stile chat.
-- Il back end con Node.js con integrata l’AI.
+- Il front end con React (mia preferenza per frontend), in stile chat.
+- Il back end con Node.js (mia preferenza per backend) con integrata l’AI.
 - Il system prompt dell’LLM.
 - La RAG.
 - Il sistema di memoria.
@@ -78,8 +76,6 @@ Dà all’LLM il controllo totale del “momento giusto”.
 
 ## Requisiti
 
-Di seguito trovi i passi da seguire per creare il progetto.
-
 Dovrai creare le descrizioni di tutti i corsi disponibili su incluDo, puoi farlo usando un’AI.
 
 Per ogni corso devi definire: Titolo, Descrizione, Durata, Se è erogato da remoto o meno, skills che sviluppa questo corso.
@@ -122,7 +118,7 @@ Non dimenticare la persistenza dei dati conversazionali, fondamentali per recupe
 
 Crea la UI nel front end, deve essere una chat.
 
-Il deploy deve essere effettuato su Firebase. Genera le istruzioni passo a passo per farlo.
+Il deploy deve essere effettuato su Firebase.
 
 ## System prompt
 
@@ -151,11 +147,3 @@ Non dare raccomandazioni prima della fine
 
 Suggerisci max 2 corsi
 Spiega perché sono coerenti con la personalità dell’utente
-
-## Github
-
-Dopo aver sviluppato il progetto, prepara una breve guida passo a passo per il deployment su Github.
-
-## Relazione
-
-Una volta finito il progetto, genera una relazione tecnica in formato .md per spiegare lo svolgimento del progetto: struttura, architettura, logica di funzionamento, etc. motivando le scelte.
