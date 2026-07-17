@@ -99,7 +99,7 @@ Il vincolo "una domanda alla volta, nessuna raccomandazione prematura" non è ap
 
 ## 8. Istruzioni di deploy
 
-Le istruzioni dettagliate per il deploy su Firebase e per la pubblicazione su GitHub sono nel file [README.md](../README.md), per evitare di duplicarle in due documenti che potrebbero disallinearsi nel tempo.
+Le istruzioni dettagliate per il deploy su Firebase sono nel file [README.md](../README.md).
 
 ## 9. Esempio di conversazione (testata sul deploy reale)
 
@@ -114,12 +114,11 @@ Questo scambio è stato eseguito realmente contro il progetto Firebase in produz
 > **Utente**: Solo in presenza, mi piace lavorare con le mani accanto a un maestro. Sono un principiante e vorrei trovare lavoro in questo settore
 > **Assistente**: *(a questo punto chiama `searchCourses`, poi `presentFinalCourses`)* Ho trovato due corsi che potrebbero fare al caso tuo, entrambi in presenza e pensati per chi parte da zero ma vuole costruirsi una vera opportunità di lavoro: **Falegnameria e restauro del legno** (4 mesi, nei weekend, si impara direttamente in bottega da un maestro) e **Restauro di mobili e beni culturali** (6 mesi, per chi si appassiona a ridare vita a mobili e oggetti storici). La risposta include entrambi i corsi come dati strutturati (`courses`), pronti per essere renderizzati come card nel front end.
 
-Durante questo test è emerso un problema reale di configurazione, poi corretto: Firebase Hosting inoltra alla Cloud Function il percorso completo della richiesta (es. `/api/ping`), mentre l'app Express era montata senza il prefisso `/api` (funzionava solo chiamando l'URL della funzione direttamente, dove quel prefisso viene "consumato" come nome della funzione). La soluzione adottata monta le stesse route sia su `/api` sia sulla radice (`backend/functions/src/app.js`), così l'app risponde correttamente sia dietro il rewrite di Hosting sia in chiamata diretta alla funzione durante il debug.
 
 ## 10. Limitazioni note
 
 - La ricerca vettoriale di Firestore è una funzionalità relativamente recente: verifica che la versione di `firebase-admin` in uso supporti `FieldValue.vector()` e `findNearest()`, e che il supporto negli emulatori locali sia sufficiente; in caso contrario, testa questa componente contro il progetto reale.
-- Il livello gratuito di Mistral AI ha limiti di richieste al minuto piuttosto bassi: sufficienti per un progetto d'esame, ma da tenere presente in caso di dimostrazioni dal vivo con più utenti contemporanei. Le politiche di fatturazione dei provider AI possono cambiare nel tempo (come mostrato dal caso Gemini in sezione 7): è opportuno verificare periodicamente lo stato dell'account prima di una dimostrazione importante.
+- Il livello gratuito di Mistral AI ha limiti di richieste al minuto piuttosto bassi: sufficienti per un progetto d'esame, ma da tenere presente in caso di dimostrazioni dal vivo con più utenti contemporanei. Le politiche di fatturazione dei provider AI possono cambiare nel tempo: è opportuno verificare periodicamente lo stato dell'account prima di una dimostrazione importante.
 - Lo storico conversazionale è troncato agli ultimi venti turni, senza un meccanismo di riassunto automatico.
 - L'affidabilità del tool-calling dipende dal system prompt: il modello potrebbe, in casi limite, chiamare `searchCourses` troppo presto o non chiamarlo affatto pur avendo informazioni sufficienti.
 - L'endpoint di chat non richiede autenticazione utente: chiunque conosca l'URL pubblico può usarlo. È una scelta accettabile per un progetto dimostrativo, non per un servizio in produzione con utenti reali.
