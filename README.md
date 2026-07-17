@@ -132,24 +132,6 @@ Firebase Hosting inoltra alla Cloud Function il percorso completo della richiest
 
 Se testi `/api/ping` con il browser o `curl` subito dopo un deploy e ricevi un 404 nonostante la funzione risponda correttamente all'URL diretto, è probabile una cache dell'edge CDN di Hosting sulla risposta precedente: riprova dopo qualche minuto o aggiungi un parametro di query per bypassarla (es. `?t=123`). Le richieste POST (come quelle della chat) non vengono comunque cachate.
 
-## 3. Guida al deployment su GitHub
-
-1. Inizializza il repository (se non già fatto):
-   ```bash
-   git init
-   ```
-2. Verifica che `.gitignore` escluda `node_modules/`, i file `.env*`, `frontend/dist/`, `.firebase/` ed eventuali chiavi di service account.
-3. Crea il repository su GitHub (via interfaccia web oppure `gh repo create`).
-4. Collega il repository remoto e fai il primo push:
-   ```bash
-   git remote add origin <URL-DEL-TUO-REPOSITORY>
-   git add .
-   git commit -m "Primo commit: chatbot IncluDO"
-   git branch -M main
-   git push -u origin main
-   ```
-
-Facoltativo: puoi automatizzare il deploy su Firebase ad ogni push su `main` con una GitHub Action (es. basata su `w9jds/firebase-action`), usando come secret GitHub un service account JSON del progetto Firebase. Non è richiesto per il funzionamento del progetto.
 
 ## Documentazione aggiuntiva
 
