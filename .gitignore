@@ -1,0 +1,14 @@
+node_modules/
+.env
+.env.local
+.env.*.local
+backend/functions/.env
+frontend/.env
+frontend/dist/
+.firebase/
+firebase-debug.log
+firestore-debug.log
+ui-debug.log
+*serviceAccountKey*.json
+chiaveAPI.md
+.DS_Store

@@ -1,0 +1,82 @@
+[
+  {
+    "id": "course-falegnameria",
+    "title": "Falegnameria e restauro del legno",
+    "description": "Impari le tecniche base e avanzate della lavorazione del legno: uso degli attrezzi manuali ed elettrici, tecniche di incastro, verniciatura e restauro conservativo di mobili antichi. Il percorso si svolge nella bottega di un maestro falegname locale, con laboratori pratici su pezzi reali destinati anche ai workshop per turisti.",
+    "skills": ["lavorazione del legno", "restauro", "uso utensili", "verniciatura", "falegnameria"],
+    "duration": "4 mesi",
+    "remote": false
+  },
+  {
+    "id": "course-ceramica",
+    "title": "Ceramica e lavorazione dell'argilla",
+    "description": "Un percorso completo sulla ceramica artigianale: tornitura, modellazione a mano, smaltatura e cottura in forno. Impari a creare oggetti utili e decorativi seguendo le tecniche tradizionali tramandate dagli artigiani del territorio.",
+    "skills": ["tornitura", "modellazione", "smaltatura", "ceramica"],
+    "duration": "3 mesi",
+    "remote": false
+  },
+  {
+    "id": "course-sartoria",
+    "title": "Sartoria e tessitura tradizionale",
+    "description": "Corso pratico di sartoria che parte dalle basi del cucito e del taglio per arrivare alla realizzazione di capi completi, con un modulo dedicato alle tecniche di tessitura tradizionale a telaio ancora vive nella zona.",
+    "skills": ["cucito", "taglio", "tessitura", "sartoria"],
+    "duration": "5 mesi",
+    "remote": false
+  },
+  {
+    "id": "course-fabbro",
+    "title": "Fabbro e lavorazione del ferro battuto",
+    "description": "Impari a lavorare il ferro battuto in forgia: piegatura, saldatura, decorazione e forgiatura a caldo per realizzare cancelli, ringhiere e complementi d'arredo, seguendo le tecniche di un fabbro artigiano con decenni di esperienza.",
+    "skills": ["forgiatura", "saldatura", "lavorazione del ferro", "fabbro"],
+    "duration": "4 mesi",
+    "remote": false
+  },
+  {
+    "id": "course-panificazione",
+    "title": "Panificazione e pasticceria artigianale",
+    "description": "Dalle basi dell'impasto con lievito madre alla cottura in forno a legna, fino alla pasticceria tradizionale del territorio. Un percorso pratico in un forno storico, che unisce ricette antiche e igiene alimentare moderna.",
+    "skills": ["panificazione", "lievitazione", "pasticceria", "igiene alimentare"],
+    "duration": "3 mesi",
+    "remote": false
+  },
+  {
+    "id": "course-restauro-mobili",
+    "title": "Restauro di mobili e beni culturali",
+    "description": "Approfondisci le tecniche di restauro conservativo di mobili antichi e piccoli beni culturali: riconoscimento dei materiali, pulitura, stuccatura, intarsio e finiture, con attenzione al rispetto della storia dell'oggetto.",
+    "skills": ["restauro", "intarsio", "conservazione", "finiture"],
+    "duration": "6 mesi",
+    "remote": false
+  },
+  {
+    "id": "course-calzoleria",
+    "title": "Calzoleria e lavorazione della pelle",
+    "description": "Impari a lavorare la pelle per realizzare e riparare calzature e piccoli accessori: taglio, cucitura, montaggio su forma e finiture, in una bottega storica di calzoleria del borgo.",
+    "skills": ["lavorazione della pelle", "cucitura", "calzoleria"],
+    "duration": "4 mesi",
+    "remote": false
+  },
+  {
+    "id": "course-liuteria",
+    "title": "Liuteria - costruzione di strumenti musicali",
+    "description": "Un percorso raro e prezioso dedicato alla costruzione artigianale di strumenti a corda: scelta dei legni, intaglio, montaggio e accordatura, sotto la guida di un liutaio che tramanda un mestiere sempre più raro.",
+    "skills": ["liuteria", "intaglio del legno", "lavorazione artigianale", "musica"],
+    "duration": "8 mesi",
+    "remote": false
+  },
+  {
+    "id": "course-apicoltura",
+    "title": "Apicoltura e trasformazione di prodotti agroalimentari",
+    "description": "Impari a gestire un apiario, dalla cura delle arnie alla raccolta e smielatura, fino alla trasformazione artigianale di miele e altri prodotti agroalimentari locali, con moduli pratici sul campo.",
+    "skills": ["apicoltura", "trasformazione alimentare", "gestione apiario"],
+    "duration": "3 mesi",
+    "remote": false
+  },
+  {
+    "id": "course-comunicazione-artigiano",
+    "title": "Comunicazione digitale e marketing per l'artigiano",
+    "description": "Un corso completamente da remoto pensato per chi vuole promuovere online la propria bottega o i workshop per turisti: social media, fotografia di prodotto, storytelling e vendita su marketplace artigianali.",
+    "skills": ["social media", "marketing", "storytelling", "fotografia di prodotto"],
+    "duration": "6 settimane",
+    "remote": true
+  }
+]
